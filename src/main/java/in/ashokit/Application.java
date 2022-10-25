@@ -11,5 +11,8 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-
+	//feature 200 enhancement 
+	public void doProcess() {
+		System.out.println("feature 200 enhancement ");
+	}
 }
