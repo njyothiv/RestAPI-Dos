@@ -3,15 +3,17 @@ package in.ashokit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import java.util.*;
 
 @SpringBootApplication
 @EnableCaching
 public class Application {
-	private static final String REST_URL = "http://www.equifax.com/gteScores";
-	
+	private Map<String,Object> cache = new HashMap<String,Object>();
+  private static final String REST_URL = "http://www.equifax.com/gteScores";
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-	
-
+	public void loadDataToCache() {
+			//logic
+	}
 }
