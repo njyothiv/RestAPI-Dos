@@ -9,11 +9,11 @@ import java.util.*;
 @EnableCaching
 public class Application {
 	private Map<String,Object> cache = new HashMap<String,Object>();
+  private static final String REST_URL = "http://www.equifax.com/gteScores";
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 	public void loadDataToCache() {
 			//logic
 	}
-
 }
